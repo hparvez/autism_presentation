@@ -295,7 +295,108 @@
           </div>
         </section>
 
-        <!-- Slide 3 -->
+
+		<!-- Slide 3 -->
+		<section style="width: 100%; height: 100%">
+			<div
+            style="
+              position: absolute;
+              top: 0px;
+              bottom: 0px;
+              left: 0px;
+              right: 0px;
+              margin: auto;
+              text-align: center;
+              z-index: 500;
+            "
+          >
+            <h1>
+              Autism Criteria
+            </h1>
+            <hr />
+          </div>
+
+		  <div class="fragment" style="transition: all 3s ease;">
+			<img
+              src="assets/bully.png"
+              alt=""
+              style="
+                position: absolute;
+                top: 150px;
+                left: 10px;
+                height: 50px;
+                width: 50px;
+              "
+            />
+            <p
+			style="
+                position: absolute;
+                top: 150px;
+                left: 80px;
+				font-size: 22px;
+				text-align: left;
+              ">
+				Persistent deficits in  social communication and social interaction, including: <br> 
+				- Deficits in social-emotional reciprocity <br>
+				- Deficits in non-verbal communicative behaviours <br> 
+				- Deficits in developing, maintaining and understanding relationships
+			</p>
+		  </div>
+
+		  <div class="fragment" style="transition: all 3s ease;">
+			<img
+              src="assets/morning-routine.png"
+              alt=""
+              style="
+                position: absolute;
+                top: 300px;
+                left: 10px;
+                height: 50px;
+                width: 50px;
+              "
+            />
+            <p
+			style="
+                position: absolute;
+                top: 300px;
+                left: 80px;
+				font-size: 22px;
+				text-align: left;
+              ">
+				Restrictive, repetitive patterns of behaviour, interests or activities, including: <br> 
+				- Repetitive motor movements, use of objects or speech <br>
+				- Strict adherence to routines <br> 
+				- Very restricted, fixated interests that are high in intensity and focus <br>
+				- Hyper- or hyporeactivity to sensory inputs
+			</p>
+		  </div>
+
+		  <div class="fragment" style="transition: all 3s ease;">
+			<img
+              src="assets/playtime.png"
+              alt=""
+              style="
+                position: absolute;
+                top: 500px;
+                left: 10px;
+                height: 50px;
+                width: 50px;
+              "
+            />
+            <p
+			style="
+                position: absolute;
+                top: 500px;
+                left: 80px;
+				font-size: 22px;
+				text-align: left;
+              ">
+				Symptoms must be present in the early developmental period, must cause clinically significant impairment in social, occupational or other areas of functioning and can't be better explained by intellectual disability or developmental delay
+			</p>
+		  </div>
+		</section>
+
+        <!-- Slide 4 -->
         <section style="width: 100%; height: 100%;">
           <div
             style="
@@ -310,9 +411,25 @@
             "
           >
             <h1>
-              What does this mean to me?
+              The "spectrum"
             </h1>
             <hr />
+          </div>
+          <div></div>
+            <iframe
+              data-src="assets/charts/radar_autism.html"
+              style="
+                height: 500px;
+                width: 500px;
+                position: absolute;
+                top: 150px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				margin: auto;
+				z-index: 9999;
+              "
+            ></iframe>
           </div>
         </section>
       </div>
@@ -322,6 +439,8 @@
     <script src="plugin/notes/notes.js"></script>
     <script src="plugin/markdown/markdown.js"></script>
     <script src="plugin/highlight/highlight.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
+    <script src="plugin/chart/plugin.js"></script>
     <script>
       // More info about initialization & config:
       // - https://revealjs.com/initialization/
@@ -330,7 +449,7 @@
         hash: true,
 
         // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealChart],
       })
     </script>
   </body>
