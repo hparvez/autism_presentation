@@ -8,26 +8,23 @@
   const ctx = document.getElementById('myChart')
 
   const data = {
-    labels: [
-      'ADHD',
-      'OCD',
-      'Alexithymia',
-      'Depression',
-      'Anxiety',
-      'Bipolar',
-      'Schizophrenia',
-      'Sleep Disorders',
-      'Epilepsy',
-      'GI Disorders',
-      'Immune Deficiency',
-    ],
+    labels: ['Below 70', '70-85', '85-115', '115-130', 'Above 130'],
     datasets: [
       {
-        label: 'Comorbidity Rate (%)',
-
-        data: [60, 37, 55, 26, 30, 11, 7, 65, 30, 65, 25],
+        label: 'Typical Distribution (Guassian)',
+        data: [2, 14, 68, 14, 2],
+        fill: true,
+        borderColor: 'rgb(75, 192, 192)',
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        tension: 0.4,
+      },
+      {
+        label: 'ASD Distribution (Bimodial)',
+        data: [34, 9, 19, 29, 8],
+        fill: true,
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
         borderColor: 'rgb(255, 99, 132)',
+        tension: 0.4,
       },
     ],
   }
@@ -36,17 +33,12 @@
 
   // <block:config:0>
   const config = {
-    type: 'bar',
+    type: 'line',
     data: data,
     options: {
-      indexAxis: 'y',
       // Elements options apply to all of the options unless overridden in a dataset
       // In this case, we are setting the border of each horizontal bar to be 2px wide
-      elements: {
-        bar: {
-          borderWidth: 2,
-        },
-      },
+
       scales: {
         y: {
           beginAtZero: true,
@@ -54,11 +46,13 @@
             beginAtZero: true,
             color: 'white', // labels such as 10, 20, etc
             showLabelBackdrop: false, // hide square behind text
-            min: 0,
-            max: 100,
           },
           grid: {
             color: 'rgba(255, 255, 255, 0.2)',
+          },
+          title: {
+            text: 'Percentge of People',
+            display: true,
           },
         },
         x: {
@@ -70,7 +64,7 @@
             color: 'rgba(255, 255, 255, 0.2)',
           },
           title: {
-            text: 'Comorbidity Rate (%)',
+            text: 'IQ Scores',
             display: true,
           },
         },
@@ -84,7 +78,7 @@
         },
         title: {
           display: true,
-          text: 'Autism Comorbidities',
+          text: 'Autism and IQ',
           color: 'white',
         },
       },
