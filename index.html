@@ -11,16 +11,20 @@
 
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/black.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
     <link rel="stylesheet" href="dist/custom.css" />
 
     <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <link
+      rel="stylesheet"
+      href="plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <!-- Slide 1 -->
+        <!-- New Slide -->
         <section>
           <div
             class="container"
@@ -53,7 +57,7 @@
               style="grid-column-start: 3; grid-column-end: 6;"
             >
               <img
-                src="https://images.pexels.com/photos/8386132/pexels-photo-8386132.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                src="assets/embrace-differences.jpg"
                 alt=""
                 style="height: auto; width: auto; max-height: 800px;"
               />
@@ -239,8 +243,8 @@
               alt=""
               style="
                 position: absolute;
-                top: 200px;
-                left: 850px;
+                top: 420px;
+                left: 800px;
                 height: 100px;
                 width: 100px;
               "
@@ -250,8 +254,8 @@
               alt=""
               style="
                 position: absolute;
-                top: 200px;
-                left: 850px;
+                top: 420px;
+                left: 800px;
                 height: 100px;
                 width: 100px;
               "
@@ -259,8 +263,8 @@
             <p
               style="
                 position: absolute;
-                top: 320px;
-                left: 830px;
+                top: 540px;
+                left: 750px;
                 font-size: 20px;
                 color: red;
               "
@@ -276,8 +280,8 @@
               alt=""
               style="
                 position: absolute;
-                top: 420px;
-                left: 800px;
+                top: 200px;
+                left: 850px;
                 height: 100px;
                 width: 100px;
               "
@@ -285,8 +289,8 @@
             <p
               style="
                 position: absolute;
-                top: 540px;
-                left: 820px;
+                top: 320px;
+                left: 875px;
                 font-size: 20px;
               "
             >
@@ -295,10 +299,30 @@
           </div>
         </section>
 
+        <!-- New Slide -->
+        <section
+          style="width: 100%; height: 100%;"
+          data-background-image="assets/autism.jpg"
+          data-background-opacity="0.5"
+        >
+          <div
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            "
+          >
+            <h1>
+              What is ASD?
+            </h1>
+            <hr />
+          </div>
+        </section>
 
-		<!-- Slide 3 -->
-		<section style="width: 100%; height: 100%">
-			<div
+        <!-- New slide -->
+        <section style="width: 100%; height: 100%;">
+          <div
             style="
               position: absolute;
               top: 0px;
@@ -316,8 +340,8 @@
             <hr />
           </div>
 
-		  <div class="fragment" style="transition: all 3s ease;">
-			<img
+          <div class="fragment" style="transition: all 3s ease;">
+            <img
               src="assets/bully.png"
               alt=""
               style="
@@ -329,22 +353,28 @@
               "
             />
             <p
-			style="
+              style="
                 position: absolute;
                 top: 150px;
                 left: 80px;
-				font-size: 22px;
-				text-align: left;
-              ">
-				Persistent deficits in  social communication and social interaction, including: <br> 
-				- Deficits in social-emotional reciprocity <br>
-				- Deficits in non-verbal communicative behaviours <br> 
-				- Deficits in developing, maintaining and understanding relationships
-			</p>
-		  </div>
+                font-size: 22px;
+                text-align: left;
+              "
+            >
+              Persistent deficits in social communication and social
+              interaction, including:
+              <br />
+              - Deficits in social-emotional reciprocity
+              <br />
+              - Deficits in non-verbal communicative behaviours
+              <br />
+              - Deficits in developing, maintaining and understanding
+              relationships
+            </p>
+          </div>
 
-		  <div class="fragment" style="transition: all 3s ease;">
-			<img
+          <div class="fragment" style="transition: all 3s ease;">
+            <img
               src="assets/morning-routine.png"
               alt=""
               style="
@@ -356,23 +386,30 @@
               "
             />
             <p
-			style="
+              style="
                 position: absolute;
                 top: 300px;
                 left: 80px;
-				font-size: 22px;
-				text-align: left;
-              ">
-				Restrictive, repetitive patterns of behaviour, interests or activities, including: <br> 
-				- Repetitive motor movements, use of objects or speech <br>
-				- Strict adherence to routines <br> 
-				- Very restricted, fixated interests that are high in intensity and focus <br>
-				- Hyper- or hyporeactivity to sensory inputs
-			</p>
-		  </div>
+                font-size: 22px;
+                text-align: left;
+              "
+            >
+              Restrictive, repetitive patterns of behaviour, interests or
+              activities, including:
+              <br />
+              - Repetitive motor movements, use of objects or speech
+              <br />
+              - Strict adherence to routines
+              <br />
+              - Very restricted, fixated interests that are high in intensity
+              and focus
+              <br />
+              - Hyper- or hyporeactivity to sensory inputs
+            </p>
+          </div>
 
-		  <div class="fragment" style="transition: all 3s ease;">
-			<img
+          <div class="fragment" style="transition: all 3s ease;">
+            <img
               src="assets/playtime.png"
               alt=""
               style="
@@ -384,21 +421,25 @@
               "
             />
             <p
-			style="
+              style="
                 position: absolute;
                 top: 500px;
                 left: 80px;
-				font-size: 22px;
-				text-align: left;
-              ">
-				Symptoms must be present in the early developmental period, must cause clinically significant impairment in social, occupational or other areas of functioning and can't be better explained by intellectual disability or developmental delay
-			</p>
-		  </div>
-		</section>
+                font-size: 22px;
+                text-align: left;
+              "
+            >
+              Symptoms must be present in the early developmental period, must
+              cause clinically significant impairment in social, occupational or
+              other areas of functioning and can't be better explained by
+              intellectual disability or developmental delay
+            </p>
+          </div>
+        </section>
 
-        <!-- Slide 4 -->
-		<section style="width: 100%; height: 100%;">
-			<div
+        <!-- New slide-->
+        <section style="width: 100%; height: 100%;">
+          <div
             style="
               position: absolute;
               top: 0px;
@@ -415,9 +456,9 @@
             </h1>
             <hr />
           </div>
-		</section>
-		
-		<!-- Slide 5 -->
+        </section>
+
+        <!-- New slide -->
         <section style="width: 100%; height: 100%;">
           <div
             style="
@@ -436,7 +477,7 @@
             </h1>
             <hr />
           </div>
-          <div></div>
+          <div>
             <iframe
               data-src="assets/charts/radar_autism.html"
               style="
@@ -444,13 +485,194 @@
                 width: 600px;
                 position: absolute;
                 top: 150px;
-				left: 0px;
-				right: 0px;
-				bottom: 0px;
-				margin: auto;
-				z-index: 9999;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: auto;
+                z-index: 9999;
               "
             ></iframe>
+          </div>
+        </section>
+
+        <!-- New Slide -->
+        <section
+          style="width: 100%; height: 100%;"
+          data-background-image="assets/autism.jpg"
+          data-background-opacity="0.5"
+        >
+          <div
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            "
+          >
+            <h1>
+              ASD Stats
+            </h1>
+            <hr />
+          </div>
+        </section>
+
+        <!-- New slide-->
+        <section style="width: 100%; height: 100%;">
+          <div
+            style="
+              position: absolute;
+              top: 0px;
+              bottom: 0px;
+              left: 0px;
+              right: 0px;
+              margin: auto;
+              text-align: center;
+              z-index: 500;
+            "
+          >
+            <h1>
+              Autism Prevalence
+            </h1>
+            <hr />
+          </div>
+
+          <div
+            style="display: grid; gap: 50px; height: 100%; padding-top: 200px;"
+          >
+            <div
+              style="
+                height: 350px;
+                align-items: left;
+                transition: all 3s ease;
+                grid-column-start: 1;
+                grid-column-end: 3;
+              "
+            >
+              <img src="assets/4-in-100.png" alt="" />
+            </div>
+            <div
+              style="
+                transition: all 3s ease;
+                grid-column-start: 3;
+                grid-column-end: 5;
+              "
+            >
+              <p style="font-size: 16px; text-align: left;">
+                Recent studies
+                <em>
+                  ( Source: "Global Prevalence of Autism: A Systematic Review
+                  Update, 2022")
+                </em>
+                indicate that approximately 1% of the population are diagnosed
+                with autism.
+                <br />
+                <br />
+                With that said, data across multiple studies indicate a material
+                gender bias in favour of males. Currently, there's no scientific
+                consensus as to why this might exist, aside from biases in
+                diagnostic criteria - therefore, equalising for this bias
+                suggests that autism prevalence may be as high as 4%.
+
+                <br />
+                <br />
+                We should note that, owing to advances in diagnostic
+                capabiliies, and a greater undertanding and awareness of autism,
+                prevalence has steadily increased over the past decades (some
+                studies indicate a tripling of rates in the US between the years
+                2000 and 2020). Should these advances continue, the figures
+                mentioned in this presentation likely underestimate the "true"
+                prevalance.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- New slide -->
+        <section style="width: 100%; height: 100%;">
+          <div
+            style="
+              position: absolute;
+              top: 0px;
+              bottom: 0px;
+              left: 0px;
+              right: 0px;
+              margin: auto;
+              text-align: center;
+              z-index: 500;
+            "
+          >
+            <h1>
+              Comorbidities
+            </h1>
+            <hr />
+          </div>
+
+          <div
+            style="display: grid; gap: 50px; height: 100%; padding-top: 200px;"
+          >
+            <div style="grid-column-start: 1; grid-column-end: 3;">
+              <p style="font-size: 16px; text-align: left;">
+                Autism has a high prevalence, and a wide variety of,
+                comorbodities. This contributes towards the difficulty in
+                accurately diagnosing autism and the vastness of the "spectrum".
+                <br />
+                <br />
+                In particular, autism has a remarkably high correlation with
+                psychiatric disorders. An estimated 85% of children with autism
+                also have some form of comorbid psychiatric diagnosis
+                <em>(Source: Bennett, 2022)</em>
+                <br />
+                <br />
+                <em>
+                  Note: the graphic shown opposite displays aggregated figures
+                  from a wide array of sources. The below URLs provide further
+                  details:
+                  <br />
+                  <br />
+                  <a
+                    style="z-index: 9999;"
+                    href="https://autismspectrumnews.org/the-prevalence-of-comorbidities-in-autism-consideration-of-comorbidity-in-intervention-and-treatment-response/#:~:text=85%25%20of%20children%20with%20autism,the%20ASD%20population%20is%20affected."
+                  >
+                    Source 1
+                  </a>
+                  <br />
+                  <a
+                    style="z-index: 9999;"
+                    href="https://neurodivergentinsights.com/blog/autism-and-alexithymia"
+                  >
+                    Source 2
+                  </a>
+                </em>
+              </p>
+            </div>
+            <div
+              style="grid-column-start: 3; grid-column-end: 6; z-index: 9999;"
+            >
+              <iframe
+                data-src="assets/charts/autism_comorbidities.html"
+                style="height: 900px; width: 600px;"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
+        <section style="width: 100%; height: 100%;">
+          <div
+            style="
+              position: absolute;
+              top: 0px;
+              bottom: 0px;
+              left: 0px;
+              right: 0px;
+              margin: auto;
+              text-align: center;
+              z-index: 500;
+            "
+          >
+            <h1>
+              Autism and IQ
+            </h1>
+            <hr />
           </div>
         </section>
       </div>
@@ -460,8 +682,8 @@
     <script src="plugin/notes/notes.js"></script>
     <script src="plugin/markdown/markdown.js"></script>
     <script src="plugin/highlight/highlight.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
-    <script src="plugin/chart/plugin.js"></script>
+    <script src="node_modules/reveal.js-menu/menu.js"></script>
+
     <script>
       // More info about initialization & config:
       // - https://revealjs.com/initialization/
@@ -470,7 +692,7 @@
         hash: true,
 
         // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealChart],
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu],
       })
     </script>
   </body>
