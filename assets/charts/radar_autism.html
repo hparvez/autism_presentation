@@ -9,18 +9,52 @@
 
   const data = {
     labels: [
-      'Eating',
-      'Drinking',
-      'Sleeping',
-      'Designing',
-      'Coding',
-      'Cycling',
-      'Running',
+      'Verbal Abilities',
+      'Light Sensitivity',
+      'Auditory Sensitivity',
+      'Olfactory Sensitivity',
+      'Texture Sensitivity',
+      'ADHD',
+      'OCD',
+      'Alexithymia',
+      'Learning Difficulties',
+      'Eye Contact',
+      'Reading Body Language',
+      'Detecting Sarcasm',
+      'Reading Voice Tone',
+      'Taking Expressions Literally',
+      'Stimming Behaviours',
+      'Strict Routine',
+      'Narrow Interests',
+      'Sleep Disorders',
+      'Gastrointensinal Disorders',
+      'Seizure Disorders',
     ],
     datasets: [
       {
-        label: 'My First Dataset',
-        data: [65, 59, 90, 81, 56, 55, 40],
+        label: 'Person 1',
+        data: [
+          80,
+          100,
+          90,
+          10,
+          85,
+          60,
+          90,
+          95,
+          0,
+          40,
+          35,
+          25,
+          20,
+          40,
+          70,
+          85,
+          65,
+          20,
+          70,
+          0,
+        ],
         fill: true,
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
         borderColor: 'rgb(255, 99, 132)',
@@ -30,8 +64,29 @@
         pointHoverBorderColor: 'rgb(255, 99, 132)',
       },
       {
-        label: 'My Second Dataset',
-        data: [28, 48, 40, 19, 96, 27, 100],
+        label: 'Person 2',
+        data: [
+          5,
+          15,
+          30,
+          70,
+          90,
+          95,
+          90,
+          100,
+          80,
+          5,
+          0,
+          5,
+          20,
+          80,
+          100,
+          95,
+          80,
+          75,
+          20,
+          10,
+        ],
         fill: true,
         backgroundColor: 'rgba(54, 162, 235, 0.2)',
         borderColor: 'rgb(54, 162, 235)',
@@ -49,9 +104,32 @@
     type: 'radar',
     data: data,
     options: {
-      elements: {
-        line: {
-          borderWidth: 3,
+      scales: {
+        r: {
+          angleLines: {
+            color: 'rgba(255, 255, 255, 0.2)',
+          },
+          grid: {
+            color: 'rgba(255, 255, 255, 0.2)',
+          },
+          ticks: {
+            beginAtZero: true,
+            color: 'white', // labels such as 10, 20, etc
+            showLabelBackdrop: false, // hide square behind text
+            min: 0,
+            max: 100,
+          },
+          pointLabels: {
+            color: 'white', // labels around the edge like 'Running'
+          },
+        },
+      },
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: {
+            color: 'white',
+          },
         },
       },
     },
