@@ -714,6 +714,84 @@
             </div>
           </div>
         </section>
+
+        <!-- New slide -->
+        <section style="width: 100%; height: 100%;">
+          <div
+            style="
+              position: absolute;
+              top: 0px;
+              bottom: 0px;
+              left: 0px;
+              right: 0px;
+              margin: auto;
+              text-align: center;
+              z-index: 500;
+            "
+          >
+            <h1>
+              Unemployment
+            </h1>
+            <hr />
+          </div>
+
+          <div
+            style="display: grid; gap: 50px; height: 100%; padding-top: 200px;"
+          >
+            <div style="grid-column-start: 1; grid-column-end: 3;">
+              <p style="font-size: 16px; text-align: left;">
+                Despite the IQ figures shown on the previous slide,
+                <b>
+                  autistic individuals display the lowest employment rate of all
+                  disabilities recorded by the UK's Office for National
+                  Statistics (ONS) at 29%.
+                </b>
+                <br />
+                <br />
+                Further studies indicate that:
+				<ul style="font-size: 16px; text-align: left;">
+					<li>Those individuals with jobs appear to be materially underemployed, with "office and administrative support" and "food preparation and service" accounting for almost 40% of jobs </li>
+					<li>Approximately 80% of jobs held are part-time </li>
+					<li>Of those employed full-time, average earnings are a mere $8.08 per hour</li>
+					<br>
+					<em>(source: US Department of Education, NLST2)</em>
+					<br>
+					<br>
+					<b>Key takeaway: There's a significant, untapped, pool of highly inteligent autistic individuals that are not represented with the current workforce.</b>
+				</ul>
+              </p>
+            </div>
+            <div
+              style="grid-column-start: 3; grid-column-end: 6; z-index: 9999;"
+            >
+              <iframe
+                data-src="assets/charts/autism_unemployment.html"
+                style="height: 900px; width: 600px;"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
+		<!-- New Slide -->
+        <section
+          style="width: 100%; height: 100%;"
+          data-background-image="assets/autism.jpg"
+          data-background-opacity="0.5"
+        >
+          <div
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            "
+          >
+            <h1>
+              ASD-Friendly Workplace
+            </h1>
+            <hr />
+          </div>
+        </section>
       </div>
     </div>
 
@@ -728,6 +806,7 @@
       // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
+		slideNumber: true,
 
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],

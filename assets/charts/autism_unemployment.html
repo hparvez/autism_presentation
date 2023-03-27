@@ -1,0 +1,87 @@
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart')
+
+  const data = {
+    labels: ['Non-Disabled', 'Disabled', 'Autism'],
+    datasets: [
+      {
+        label: 'Employment Rate (%)',
+
+        data: [81.6, 53.5, 29],
+        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        borderColor: 'rgb(255, 99, 132)',
+      },
+    ],
+  }
+
+  // </block:setup>
+
+  // <block:config:0>
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {
+      indexAxis: 'x',
+      // Elements options apply to all of the options unless overridden in a dataset
+      // In this case, we are setting the border of each horizontal bar to be 2px wide
+      elements: {
+        bar: {
+          borderWidth: 2,
+        },
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            beginAtZero: true,
+            color: 'white', // labels such as 10, 20, etc
+            showLabelBackdrop: false, // hide square behind text
+            min: 0,
+            max: 100,
+          },
+          grid: {
+            color: 'rgba(255, 255, 255, 0.2)',
+          },
+          title: {
+            text: 'Employment Rate (%)',
+            display: true,
+          },
+        },
+        x: {
+          ticks: {
+            color: 'white', // labels such as 10, 20, etc
+            showLabelBackdrop: false, // hide square behind text
+          },
+          grid: {
+            color: 'rgba(255, 255, 255, 0.2)',
+          },
+          title: {
+            text: 'Cohort',
+            display: true,
+          },
+        },
+      },
+      responsive: true,
+      aspectRatio: 1.2,
+      plugins: {
+        legend: {
+          show: false,
+          position: 'bottom',
+        },
+        title: {
+          display: true,
+          text: 'Employment Rate (%)',
+          color: 'white',
+        },
+      },
+    },
+  }
+
+  new Chart(ctx, config)
+</script>
